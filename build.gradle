@@ -2,10 +2,9 @@
 plugins {
     id 'eclipse'
     id 'idea'
-    id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
-    id("maven-publish")
-    id("com.teamresourceful.resourcefulgradle") version "0.0.+"
 }
 
 
@@ -31,6 +30,9 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
+
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
             mods {
                 "${mod_id}" {
@@ -63,23 +65,10 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    mavenCentral()
-    maven { url = 'https://maven.teamresourceful.com/repository/maven-public/'}
     maven {
-        url = uri("https://www.cursemaven.com")
+        url "https://cursemaven.com"
         content {
-            includeGroup("curse.maven")
-        }
-    }
-    exclusiveContent {
-        forRepository {
-            maven {
-                name = "Modrinth"
-                url = uri("https://api.modrinth.com/maven")
-            }
-        }
-        filter {
-            includeGroup("maven.modrinth")
+            includeGroup "curse.maven"
         }
     }
 }
@@ -88,10 +77,10 @@ dependencies {
 
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    "modApi"(group = "com.teamresourceful.resourcefullib", name = "resourcefullib-$forge_version-$minecraft_version", version = resourcefulLibVersion)
-    "modApi"(group = "com.teamresourceful.resourcefulconfig", name = "resourcefulconfig-$forge_version-$minecraft_version", version = resourcefulConfigVersion)
-    "modApi"(group = "earth.terrarium.botarium", name = "botarium-$forge_version-$minecraft_version", version = botariumVersion)
-    "modApi"(group = "earth.terrarium.adastra", name = "ad_astra-$forge_version-$minecraft_version", version = adAstraVersion)
+    implementation fg.deobf("curse.maven:ad-astra-635042:4894852")
+    implementation fg.deobf("curse.maven:resourceful-lib-570073:4973823")
+    implementation fg.deobf("curse.maven:resourceful-config-714059:5020441")
+    implementation fg.deobf("curse.maven:botarium-704113:5024181")
 }
 
 tasks.named('processResources', ProcessResources).configure {
@@ -107,18 +96,19 @@ tasks.named('processResources', ProcessResources).configure {
 
     filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
         expand replaceProperties + [project: project]
-    }}
+    }
+}
 
 tasks.named('jar', Jar).configure {
     manifest {
         attributes([
-                "Specification-Title": mod_id,
-                "Specification-Vendor": mod_authors,
-                "Specification-Version": "1",
-                "Implementation-Title": project.name,
-                "Implementation-Version": project.jar.archiveVersion,
-                "Implementation-Vendor": mod_authors,
-                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                'Specification-Title'       : mod_id,
+                'Specification-Vendor'      : mod_authors,
+                'Specification-Version'     : '1',
+                'Implementation-Title'      : project.name,
+                'Implementation-Version'    : project.jar.archiveVersion,
+                'Implementation-Vendor'     : mod_authors,
+                'Implementation-Timestamp'  : new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
 

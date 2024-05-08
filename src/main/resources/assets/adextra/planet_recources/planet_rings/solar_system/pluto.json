@@ -1,0 +1,8 @@
+{
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:solar_system",
+  "texture": "adastraaddon:textures/sky/pluto.png",
+  "speed": 1800,
+  "scale": 6,
+  "radius": 9.0
+}

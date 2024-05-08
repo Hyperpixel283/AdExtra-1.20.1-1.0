@@ -1,6 +1,7 @@
 package de.hyperpixel.adextra;
 
 import com.mojang.logging.LogUtils;
+import com.teamresourceful.resourcefulconfig.common.annotations.Config;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -14,6 +15,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
+import java.io.ObjectInputFilter;
 
 @Mod(AdExtra.MODID)
 public class AdExtra  {
