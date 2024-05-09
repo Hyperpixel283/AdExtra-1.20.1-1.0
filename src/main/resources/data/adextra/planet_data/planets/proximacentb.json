@@ -1,3 +1,16 @@
 {
-
+  "translation": "planet.adextra.proximacentb",
+  "world": "adextra:proximacentb",
+  "gravity": 11.4742,
+  "orbit_world": "adextra:proximacentb_orbit",
+  "has_oxygen": true,
+  "has_atmosphere": true,
+  "solar_power": 8,
+  "orbit_solar_power": 9,
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:proxima_centauri",
+  "temperature": -39,
+  "rocket_tier": 4,
+  "days_in_year": 11,
+  "button_color": "green"
 }

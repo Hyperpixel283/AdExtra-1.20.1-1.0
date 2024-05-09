@@ -1,8 +1,8 @@
 {
   "galaxy": "ad_astra:milky_way",
   "solar_system": "ad_astra:proxima_centauri",
-  "texture": "adastraaddon:textures/sky/yerock.png",
-  "speed": 11,
+  "texture": "adextra:textures/planetscreen/proximacentb.png",
+  "speed": 9,
   "scale": 13,
   "radius": 2.0
 }

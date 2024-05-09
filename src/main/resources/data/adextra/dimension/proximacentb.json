@@ -1,3 +1,31 @@
 {
+  "type": "adextra:proximacentb_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "adextra:proximacentb",
+    "biome_source": {
+      "type": "minecraft:fixed",
 
+          "biome": "adextra:proximacentb_hills",
+          "parameters": {
+            "temperature": 0.0,
+            "humidity": 0.0,
+            "continentalness": 0.0,
+            "erosion": 0.0,
+            "weirdness": 0.0,
+            "depth": 0.0,
+            "offset": 0.0
+          },
+          "biome": "adextra:proximacentb_wasteland",
+          "parameters": {
+            "temperature": 0.0,
+            "humidity": 0.0,
+            "continentalness": 0.0,
+            "erosion": 0.0,
+            "weirdness": 0.0,
+            "depth": 0.0,
+            "offset": 0.0
+          }
+    }
+  }
 }

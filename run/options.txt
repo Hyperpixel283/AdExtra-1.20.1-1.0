@@ -45,7 +45,7 @@ renderClouds:"true"
 resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
-lang:en_us
+lang:en_gb
 soundDevice:""
 chatVisibility:0
 chatOpacity:1.0

@@ -1,8 +1,8 @@
 {
-  "world": "adastraaddon:yerock_orbit",
+  "world": "adextra:proximacentbt",
   "stars": {
-    "fancy_count": 13000,
-    "fast_count": 6000,
+    "fancy_count": 20000,
+    "fast_count": 9000,
     "colored_stars": true,
     "daylight_visible": true
   },
@@ -31,26 +31,10 @@
       ]
     },
     {
-      "texture": "adastraaddon:textures/sky/yerock.png",
+      "texture": "ad_astra:textures/sky/glacio.png",
       "blending": false,
       "render_type": "scaling",
-      "scale": 1.0,
-      "rotation": [
-        180.0,
-        180.0,
-        0.0
-      ]
-    },
-    {
-      "texture": "ad_astra:textures/sky/light.png",
-      "blending": true,
-      "render_type": "scaling",
       "scale": 3.0,
-      "color": {
-        "r": 102,
-        "g": 204,
-        "b": 255
-      },
       "rotation": [
         180.0,
         180.0,
@@ -61,7 +45,7 @@
       "texture": "ad_astra:textures/sky/vicinus.png",
       "blending": false,
       "render_type": "static",
-      "scale": 60.0,
+      "scale": 4.0,
       "rotation": [
         60.0,
         0.0,
@@ -71,16 +55,16 @@
     {
       "texture": "ad_astra:textures/sky/light.png",
       "blending": true,
-      "render_type": "static",
-      "scale": 120.0,
+      "render_type": "scaling",
+      "scale": 4.0,
       "color": {
-        "r": 204,
-        "g": 153,
-        "b": 255
+        "r": 181,
+        "g": 211,
+        "b": 240
       },
       "rotation": [
-        60.0,
-        0.0,
+        180.0,
+        180.0,
         0.0
       ]
     }

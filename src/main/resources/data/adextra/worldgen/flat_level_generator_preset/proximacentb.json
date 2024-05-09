@@ -1,0 +1,49 @@
+{
+  "display": "minecraft:grass",
+  "settings": {
+    "biome": "adextra:proximacentb_wasteland",
+    "features": true,
+    "lakes": true,
+    "layers": [
+      {
+        "block": "minecraft:bedrock",
+        "height": 1
+      },
+      {
+        "block": "minecraft:terracotta",
+        "height": 59
+      },
+      {
+        "block": "minecraft:red_sand",
+        "height": 1
+      }
+    ],
+    "structure_overrides": [
+    ]
+  },
+  "settings": {
+    "biome": "adextra:proximacentb_hills",
+    "features": true,
+    "lakes": true,
+    "layers": [
+      {
+        "block": "minecraft:bedrock",
+        "height": 1
+      },
+      {
+        "block": "minecraft:stone",
+        "height": 37
+      },
+      {
+        "block": "minecraft:grass",
+        "height": 21
+      },
+      {
+        "block": "minecraft:snow",
+        "height": 1
+      }
+    ],
+    "structure_overrides": [
+    ]
+  }
+}
