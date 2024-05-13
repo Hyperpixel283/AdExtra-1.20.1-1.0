@@ -2,6 +2,8 @@ package de.hyperpixel.adextra;
 
 import com.mojang.logging.LogUtils;
 import com.teamresourceful.resourcefulconfig.common.annotations.Config;
+import de.hyperpixel.adextra.entities.AdExtraEntityTypes;
+import net.minecraft.world.entity.EntityType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -32,6 +34,8 @@ public class AdExtra  {
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
+        AdExtraEntityTypes.ENTITY_TYPES.init();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)  {

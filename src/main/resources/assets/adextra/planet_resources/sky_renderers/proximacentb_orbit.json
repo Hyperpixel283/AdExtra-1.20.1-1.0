@@ -15,7 +15,7 @@
   "horizon_angle": 0,
   "sky_objects": [
     {
-      "texture": "ad_astra:textures/sky/sun.png",
+      "texture": "ad_astra:textures/sky/blue_sun.png",
       "blending": true,
       "render_type": "dynamic",
       "scale": 20.0,
@@ -44,11 +44,11 @@
     {
       "texture": "ad_astra:textures/sky/glacio.png",
       "blending": false,
-      "render_type": "scaling",
-      "scale": 3.0,
+      "render_type": "static",
+      "scale": 1.0,
       "rotation": [
-        180.0,
-        180.0,
+        20.0,
+        70.0,
         0.0
       ]
     },
@@ -56,7 +56,7 @@
       "texture": "ad_astra:textures/sky/vicinus.png",
       "blending": false,
       "render_type": "static",
-      "scale": 4.0,
+      "scale": 2.0,
       "rotation": [
         60.0,
         0.0,

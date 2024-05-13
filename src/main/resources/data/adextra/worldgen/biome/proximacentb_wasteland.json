@@ -5,7 +5,7 @@
       "minecraft:cave_extra_underground"
     ]
   },
-  "downfall": 1.0,
+  "downfall": 0.0,
   "effects": {
     "fog_color": 11313134,
     "mood_sound": {
@@ -31,7 +31,8 @@
     [],
     [
       "minecraft:spring_lava"
-    ]
+    ],
+    []
   ],
   "has_precipitation": true,
   "spawn_costs": {},

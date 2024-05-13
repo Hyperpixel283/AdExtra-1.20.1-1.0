@@ -15,7 +15,7 @@
   },
   "noise": {
     "min_y": -64,
-    "height": 384,
+    "height": 256,
     "size_horizontal": 1,
     "size_vertical": 2
   },
@@ -307,7 +307,7 @@
         "if_true": {
           "type": "minecraft:biome",
           "biome_is": [
-            "adextra:proximacentb_wastelands"
+            "adextra:proximacentb_wasteland"
           ]
         },
         "then_run": {
@@ -343,14 +343,14 @@
                   "then_run": {
                     "type": "minecraft:block",
                     "result_state": {
-                      "Name": "minecraft:red_sand"
+                      "Name": "minecraft:orange_terracotta"
                     }
                   }
                 },
                 {
                   "type": "minecraft:block",
                   "result_state": {
-                    "Name": "minecraft:grass_block"
+                    "Name": "minecraft:red_sand"
                   }
                 }
               ]
@@ -381,7 +381,7 @@
               "then_run": {
                 "type": "minecraft:block",
                 "result_state": {
-                  "Name": "minecraft:snow",
+                  "Name": "minecraft:red_sandstone",
                   "Properties": {
                     "axis": "y"
                   }
@@ -451,7 +451,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:snow",
+                        "Name": "minecraft:ice",
                         "Properties": {
                           "axis": "y"
                         }
@@ -461,7 +461,7 @@
                   {
                     "type": "minecraft:block",
                     "result_state": {
-                      "Name": "minecraft:ice"
+                      "Name": "minecraft:snow_block"
                     }
                   }
                 ]
