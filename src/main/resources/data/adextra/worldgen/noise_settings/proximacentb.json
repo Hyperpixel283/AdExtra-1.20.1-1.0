@@ -343,14 +343,14 @@
                   "then_run": {
                     "type": "minecraft:block",
                     "result_state": {
-                      "Name": "minecraft:orange_terracotta"
+                      "Name": "minecraft:red_sand"
                     }
                   }
                 },
                 {
                   "type": "minecraft:block",
                   "result_state": {
-                    "Name": "minecraft:red_sand"
+                    "Name": "minecraft:orange_terracotta"
                   }
                 }
               ]

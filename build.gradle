@@ -77,10 +77,10 @@ dependencies {
 
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    implementation fg.deobf("curse.maven:ad-astra-635042:4894852")
-    implementation fg.deobf("curse.maven:resourceful-lib-570073:4973823")
+    implementation fg.deobf("curse.maven:ad-astra-635042:5116766")
+    implementation fg.deobf("curse.maven:resourceful-lib-570073:5093329")
     implementation fg.deobf("curse.maven:resourceful-config-714059:5020441")
-    implementation fg.deobf("curse.maven:botarium-704113:5024181")
+    implementation fg.deobf("curse.maven:botarium-704113:5118353")
 }
 
 tasks.named('processResources', ProcessResources).configure {

@@ -2,7 +2,7 @@
   "galaxy": "ad_astra:milky_way",
   "solar_system": "ad_astra:proxima_centauri",
   "texture": "adextra:textures/planetscreen/proximacentb.png",
-  "speed": 12,
+  "speed": 13,
   "scale": 13,
   "radius": 2.0
 }

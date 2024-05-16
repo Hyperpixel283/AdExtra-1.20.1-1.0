@@ -1,6 +1,9 @@
 package de.hyperpixel.adextra;
 
 import com.mojang.logging.LogUtils;
+import de.hyperpixel.adextra.client.AdExtraClient;
+import de.hyperpixel.adextra.item.AdExtraItems;
+import earth.terrarium.ad_astra.client.forge.AdAstraClientForge;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -14,6 +17,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 import java.io.ObjectInputFilter;
+import java.util.Map;
+import java.util.Objects;
 
 @Mod(AdExtra.MODID)
 public class AdExtra  {
@@ -35,7 +40,7 @@ public class AdExtra  {
 
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event)  {
+private void addCreative(BuildCreativeModeTabContentsEvent event)  {
 
     }
     @SubscribeEvent
@@ -47,9 +52,7 @@ public class AdExtra  {
     public static class ClientModEvents {
 
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-
+        public static void onClientSetup(FMLClientSetupEvent event) {
         }
     }
 }

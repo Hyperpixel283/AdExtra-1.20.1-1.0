@@ -9,7 +9,7 @@
         {
           "biome": "adextra:proximacentb_hills",
           "parameters": {
-            "temperature": 2.0,
+            "temperature": 0.0,
             "humidity": 1.0,
             "continentalness": 0.3,
             "erosion": 0.0,
